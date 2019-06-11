@@ -6,6 +6,9 @@ For the `Flag Source` column I just record where I find the flag for this challe
 
 Name | Event | Category | Difficulty | Comment | Flag Source
 --- | --- | --- | --- | --- | --- |
+[zer0ssh](https://github.com/Septyem/0ctf_tctf_2019/tree/master/zer0ssh) | 0CTF/TCTF 2019 Finals | Crypto | Hard | The combination of one-time signature and docker image. Forge signatures for xmss by collecting enough samples. The solution is not hard to understand but you should deal with all these details in ssh authentication process | *[A Perfect Day for Bananafish](https://en.wikipedia.org/wiki/A_Perfect_Day_for_Bananafish)*
+[babydb](https://github.com/Septyem/0ctf_tctf_2019/tree/master/babydb) | 0CTF/TCTF 2019 Finals | Web | Medium Easy | Key-value database web service written with ocaml-cohttp. Misuse of state monad | /
+[babymath](https://github.com/Septyem/0ctf_tctf_2019/tree/master/babymath) | 0CTF/TCTF 2019 Finals | Reverse | Medium Easy | Discrete logrithm for matrix and baby-step giant-step | /
 [notfeal](https://github.com/sixstars/starctf2019/tree/master/crypto-notfeal) | *ctf 2019 | Crypto | Medium | Differential cryptanalysis of modified FEAL. This challenge is not interesting enough but rather a good practice to get into cryptanalysis details | /
 [babyprng](https://github.com/sixstars/starctf2019/tree/master/crypto-babyprng) | *ctf 2019 | Crypto | Easy | Basic von Neumann extractor (notice that babyprng2 credits to zzj, not me) | /
 [zer0des](https://github.com/Septyem/0ctf_tctf_2019/tree/master/zer0des) | 0CTF/TCTF 2019 Quals | Crypto | Hard | Breaking 8-round DES with differential-linear cryptanalysis. You are supposed to find more differential paths yourself. Due to heavy traffic required in test, I did not use 9-round, which makes it easier to solve | *[The Brothers Karamazov](https://en.wikipedia.org/wiki/The_Brothers_Karamazov)*
