@@ -1,3 +1,3 @@
-using honggfuzz commit 7eecfc991d0ae540d9773a6feb8fac5012a55ed6
+### solution
 
-remote server is newest Ubuntu:20.04 docker (IMAGE ID 9873176a8ff5) . find the libs yourself :)
+The function `util_Realloc` in honggfuzz has a somewhat different api with realloc, and will double free with size 0.
