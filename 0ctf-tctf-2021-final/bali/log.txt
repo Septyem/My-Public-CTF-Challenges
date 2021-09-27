@@ -1,0 +1,540 @@
+java -XX:CompileCommand=compileonly,Task::f -Xcomp -XX:+PrintIdeal Task                                
+CompileCommand: compileonly Task.f bool compileonly = true
+> [REDACTED_FLAG]
+ 1874  LoadI  ===  377  1875  1281  [[ 1871 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1288,1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1870  LoadI  ===  377  1871  1283  [[ 1869 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1282,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1871  StoreI  ===  377  1875  336  1874  [[ 1869  1870 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[0] *, idx=6; !orig=1286,1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1868  LoadI  ===  377  1869  1474  [[ 1867 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1568,1315,1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1869  StoreI  ===  377  1871  1281  1870  [[ 1867  1868 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[1] *, idx=6; !orig=1280,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1866  LoadI  ===  377  1867  1465  [[ 1865 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1565,1309,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1867  StoreI  ===  377  1869  1283  1868  [[ 1865  1866 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[2] *, idx=6; !orig=1566,1313,1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1864  LoadI  ===  377  1865  1460  [[ 1863 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1560,1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1865  StoreI  ===  377  1867  1474  1866  [[ 1863  1864 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[3] *, idx=6; !orig=1564,1307,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1912  RShiftI  === _  1913  581  [[ 1911 ]]  !orig=582 !jvms: Task::f @ bci:132 (line 20)
+ 1916  LoadI  ===  377  1917  1474  [[ 1915 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1473,1261,1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1917  StoreI  ===  377  1920  563  1919  [[ 1915  1916 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[1] *, idx=6; !orig=1210,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1920  StoreI  ===  377  378  541  1921  [[ 1917  1919 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[0] *, idx=6; !orig=1217,1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1862  LoadI  ===  377  1863  1451  [[ 1861 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1554,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1863  StoreI  ===  377  1865  1465  1864  [[ 1861  1862 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[4] *, idx=6; !orig=1558,1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1911  URShiftI  === _  1912  583  [[ 1910 ]]  !orig=584 !jvms: Task::f @ bci:132 (line 20)
+ 1915  StoreI  ===  377  1917  1471  1916  [[ 1907  1914 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[2] *, idx=6; !orig=1470,1258,1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1921  LoadI  ===  377  378  1281  [[ 1918  1920 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1220,1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1919  LoadI  ===  377  1920  1283  [[ 1917  1918 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1211,528 !jvms: Task::f @ bci:106 (line 17)
+ 1902  LoadI  ===  377  1903  1532  [[ 1901 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1531,1261,1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1903  StoreI  ===  377  1905  593  1904  [[ 1901  1902 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[5] *, idx=6; !orig=1449,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1906  LoadI  ===  377  1907  1460  [[ 1905 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1459,1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1907  StoreI  ===  377  1915  568  1914  [[ 1905  1906 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[3] *, idx=6; !orig=1463,1251,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1860  LoadI  ===  377  1861  1532  [[ 1859 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1609,1315,1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1861  StoreI  ===  377  1863  1460  1862  [[ 1859  1860 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[5] *, idx=6; !orig=1552,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1896  LoadI  ===  377  1897  1518  [[ 1895 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1517,1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1897  StoreI  ===  377  1901  597  1900  [[ 1895  1896 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[7] *, idx=6; !orig=1521,1251,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1910  AddI  === _  1911  1913  [[ 1909 ]]  !orig=585 !jvms: Task::f @ bci:132 (line 20)
+ 1914  LoadI  ===  377  1915  1465  [[ 1907  1913 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1464,1252,528 !jvms: Task::f @ bci:106 (line 17)
+ 1918  AndI  === _  1919  1921  [[ 1913 ]]  !orig=565 !jvms: Task::f @ bci:120 (line 19)
+ 1901  StoreI  ===  377  1903  1529  1902  [[ 1897  1900 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[6] *, idx=6; !orig=1528,1258,1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1905  StoreI  ===  377  1907  1457  1906  [[ 1903  1904 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[4] *, idx=6; !orig=1456,1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1858  LoadI  ===  377  1859  1523  [[ 1857 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1606,1309,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1859  StoreI  ===  377  1861  1451  1860  [[ 1857  1858 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[6] *, idx=6; !orig=1607,1313,1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1894  LoadI  ===  377  1895  1509  [[ 1893 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1508,528 !jvms: Task::f @ bci:106 (line 17)
+ 1895  StoreI  ===  377  1897  1515  1896  [[ 1893  1894 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[8] *, idx=6; !orig=1514,1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1909  AndI  === _  1910  589  [[ 1908 ]]  !orig=590 !jvms: Task::f @ bci:132 (line 20)
+ 1913  AddI  === _  1918  1914  [[ 1908  1910  1912 ]]  !orig=570 !jvms: Task::f @ bci:128 (line 20)
+ 1900  LoadI  ===  377  1901  1523  [[ 1897  1899 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1522,1252,528 !jvms: Task::f @ bci:106 (line 17)
+ 1904  LoadI  ===  377  1905  1451  [[ 1899  1903 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1450,528 !jvms: Task::f @ bci:106 (line 17)
+ 1856  LoadI  ===  377  1857  1518  [[ 1855 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1601,1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1857  StoreI  ===  377  1859  1532  1858  [[ 1855  1856 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[7] *, idx=6; !orig=1605,1307,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1887  RShiftI  === _  1888  581  [[ 1886 ]]  !orig=620 !jvms: Task::f @ bci:163 (line 22)
+ 1893  StoreI  ===  377  1895  1511  1894  [[ 1890  1892 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[9] *, idx=6; !orig=1507,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1908  SubI  === _  1913  1909  [[ 1898 ]]  !orig=591 !jvms: Task::f @ bci:132 (line 20)
+ 1899  OrI  === _  1904  1900  [[ 1898 ]]  !orig=599 !jvms: Task::f @ bci:144 (line 21)
+ 1854  LoadI  ===  377  1855  1509  [[ 1853 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1595,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1855  StoreI  ===  377  1857  1523  1856  [[ 1853  1854 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[8] *, idx=6; !orig=1599,1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1878  LoadI  ===  377  1882  1097  [[ 1877 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1882  StoreI  ===  377  1890  608  1889  [[ 1877  1878 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[11] *, idx=6; !orig=1251,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1886  URShiftI  === _  1887  583  [[ 1885 ]]  !orig=621 !jvms: Task::f @ bci:163 (line 22)
+ 1890  StoreI  ===  377  1893  603  1892  [[ 1882  1889 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[10] *, idx=6; !orig=1258,1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1892  LoadI  ===  377  1893  1262  [[ 1890  1891 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1261,1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1898  XorI  === _  1899  1908  [[ 1891 ]]  !orig=600 !jvms: Task::f @ bci:145 (line 21)
+ 1852  LoadI  ===  377  1853  1262  [[ 1851 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1315,1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1853  StoreI  ===  377  1855  1518  1854  [[ 1851  1852 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[9] *, idx=6; !orig=1593,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1876  LoadI  ===  377  1877  744  [[ 1875 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=528 !jvms: Task::f @ bci:106 (line 17)
+ 1877  StoreI  ===  377  1882  1094  1878  [[ 1875  1876 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[12] *, idx=6; !orig=1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1885  AddI  === _  1886  1888  [[ 1884 ]]  !orig=622 !jvms: Task::f @ bci:163 (line 22)
+ 1889  LoadI  ===  377  1890  1253  [[ 1882  1888 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1252,528 !jvms: Task::f @ bci:106 (line 17)
+ 1891  AddI  === _  1898  1892  [[ 1888 ]]  !orig=605 !jvms: Task::f @ bci:154 (line 22)
+ 1850  LoadI  ===  377  1851  1253  [[ 1849 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1309,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1851  StoreI  ===  377  1853  1509  1852  [[ 1849  1850 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[10] *, idx=6; !orig=1313,1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1875  StoreI  ===  377  1877  545  1876  [[ 1871  1873  1874 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[13] *, idx=6; !orig=547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1884  AndI  === _  1885  589  [[ 1883 ]]  !orig=625 !jvms: Task::f @ bci:163 (line 22)
+ 1888  AddI  === _  1891  1889  [[ 1883  1885  1887 ]]  !orig=610 !jvms: Task::f @ bci:159 (line 22)
+ 1848  LoadI  ===  377  1849  1097  [[ 1847 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1849  StoreI  ===  377  1851  1262  1850  [[ 1847  1848 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[11] *, idx=6; !orig=1307,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1873  LoadI  ===  377  1875  336  [[ 1872 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=628 !jvms: Task::f @ bci:170 (line 23)
+ 1883  SubI  === _  1888  1884  [[ 1872 ]]  !orig=626 !jvms: Task::f @ bci:163 (line 22)
+ 1846  LoadI  ===  377  1847  744  [[ 1845 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1847  StoreI  ===  377  1849  1253  1848  [[ 1845  1846 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[12] *, idx=6; !orig=1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1872  XorI  === _  1883  1873  [[ 1844 ]]  !orig=629,[967] !jvms: Task::f @ bci:171 (line 23)
+ 1845  StoreI  ===  377  1847  1097  1846  [[ 1844 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[13] *, idx=6; !orig=729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 563  AddP  === _  380  380  199  [[ 1210  1917 ]]  !orig=[1214],545 !jvms: Task::f @ bci:119 (line 19)
+ 1844  StoreI  ===  377  1845  744  1872  [[ 442 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[14] *, idx=6; !orig=745,1953 !jvms: Task::f @ bci:205 (line 27)
+ 541  AddP  === _  380  380  335  [[ 1217  1920 ]]  !orig=[1218],1094,545 !jvms: Task::f @ bci:107 (line 17)
+ 593  AddP  === _  380  380  592  [[ 1449  1903 ]]  !orig=[1453],545 !jvms: Task::f @ bci:139 (line 21)
+ 568  AddP  === _  380  380  567  [[ 1463  1907 ]]  !orig=[1467],[1255],545 !jvms: Task::f @ bci:127 (line 20)
+ 582  RShiftI  === _  570  581  [[ 584 ]]  !jvms: Task::f @ bci:132 (line 20)
+ 1473  LoadI  ===  377  1210  1474  [[ 1470 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1261,1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1471  AddP  === _  380  380  799  [[ 1470  1915 ]]  !orig=[1259],1094,545 !jvms: Task::f @ bci:107 (line 17)
+ 1210  StoreI  ===  1033  1217  563  1211  [[ 1470  1473 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[1] *, idx=6; !orig=547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 442  Phi  ===  1033  1844  745  [[ 1220  1217 ]]  #memory  Memory: @int[int:>=0]:exact+any *, idx=6; !orig=[497] !jvms: Task::f @ bci:88 (line 16)
+ 1217  StoreI  ===  1033  442  541  1220  [[ 1210  1211 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[0] *, idx=6; !orig=1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 597  AddP  === _  380  380  596  [[ 1521  1897 ]]  !orig=[1525],[1255],545 !jvms: Task::f @ bci:143 (line 21)
+ 1531  LoadI  ===  377  1449  1532  [[ 1528 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1261,1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1529  AddP  === _  380  380  826  [[ 1528  1901 ]]  !orig=[1259],1094,545 !jvms: Task::f @ bci:107 (line 17)
+ 1449  StoreI  ===  1033  1456  593  1450  [[ 1528  1531 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[5] *, idx=6; !orig=547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1459  LoadI  ===  377  1463  1460  [[ 1456 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1457  AddP  === _  380  380  812  [[ 1456  1905 ]]  !orig=1094,545 !jvms: Task::f @ bci:107 (line 17)
+ 1463  StoreI  ===  1033  1470  568  1464  [[ 1456  1459 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[3] *, idx=6; !orig=1251,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 584  URShiftI  === _  582  583  [[ 585 ]]  !jvms: Task::f @ bci:132 (line 20)
+ 1470  StoreI  ===  1033  1210  1471  1473  [[ 1463  1464 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[2] *, idx=6; !orig=1258,1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1220  LoadI  ===  377  442  1281  [[ 1217  565 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1211  LoadI  ===  377  1217  1283  [[ 1210  565 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=528 !jvms: Task::f @ bci:106 (line 17)
+ 2061  StoreP  ===  2079  172  1991  2047  [[ 2062 ]]  @rawptr:BotPTR, idx=Raw;  Memory: @rawptr:BotPTR, idx=Raw;
+ 1517  LoadI  ===  377  1521  1518  [[ 1514 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 1515  AddP  === _  380  380  839  [[ 1514  1895 ]]  !orig=1094,545 !jvms: Task::f @ bci:107 (line 17)
+ 1521  StoreI  ===  1033  1528  597  1522  [[ 1514  1517 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[7] *, idx=6; !orig=1251,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1528  StoreI  ===  1033  1449  1529  1531  [[ 1521  1522 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[6] *, idx=6; !orig=1258,1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1456  StoreI  ===  1033  1463  1457  1459  [[ 1449  1450 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[4] *, idx=6; !orig=1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 585  AddI  === _  584  570  [[ 590 ]]  !jvms: Task::f @ bci:132 (line 20)
+ 1464  LoadI  ===  377  1470  1465  [[ 1463  570 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1252,528 !jvms: Task::f @ bci:106 (line 17)
+ 565  AndI  === _  1211  1220  [[ 570 ]]  !jvms: Task::f @ bci:120 (line 19)
+ 2063  AddP  === _  2046  2046  1418  [[ 2065 ]] 
+ 2062  StoreL  ===  2079  2061  2046  1075  [[ 2065 ]]  @NULL  Memory: @rawptr:BotPTR, idx=Raw;
+ 2028  Proj  ===  2026  [[ 1988 ]] #5 !orig=[375] !jvms: Task::f @ bci:74 (line 14)
+ 581  ConI  ===  0  [[ 582  620  1887  1912 ]]  #int:31
+ 1508  LoadI  ===  377  1514  1509  [[ 1507 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=528 !jvms: Task::f @ bci:106 (line 17)
+ 1511  AddP  === _  380  380  847  [[ 1507  1893 ]]  !orig=545 !jvms: Task::f @ bci:107 (line 17)
+ 1514  StoreI  ===  1033  1521  1515  1517  [[ 1507  1508 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[8] *, idx=6; !orig=1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1522  LoadI  ===  377  1528  1523  [[ 1521  599 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1252,528 !jvms: Task::f @ bci:106 (line 17)
+ 1450  LoadI  ===  377  1456  1451  [[ 1449  599 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=528 !jvms: Task::f @ bci:106 (line 17)
+ 590  AndI  === _  585  589  [[ 591 ]]  !jvms: Task::f @ bci:132 (line 20)
+ 570  AddI  === _  565  1464  [[ 585  582  591 ]]  !jvms: Task::f @ bci:128 (line 20)
+ 1418  ConL  ===  0  [[ 2016  2063 ]]  #long:8
+ 1075  ConL  ===  0  [[ 2015  2062 ]]  #long:1
+ 2014  StoreP  ===  2032  310  1991  1996  [[ 2015 ]]  @rawptr:BotPTR, idx=Raw;  Memory: @rawptr:BotPTR, idx=Raw;
+ 443  Phi  ===  1033  46  746  [[ 746 ]]  #int:1..1234:www #tripcount !orig=[1976] !jvms: Task::f @ bci:88 (line 16)
+ 2053  AddP  === _  2046  2047  2002  [[ 2054 ]] 
+ 2066  AddP  === _  2046  2046  1827  [[ 2067 ]] 
+ 2065  StoreNKlass  ===  2079  2062  2063  2033  [[ 2067 ]]  @NULL  Memory: @rawptr:BotPTR, idx=Raw;
+ 1992  ConL  ===  0  [[ 1993 ]]  #long:296
+ 1988  Phi  ===  1985  2028  1995  [[ 380 ]]  #rawptr:BotPTR !orig=[375] !jvms: Task::f @ bci:74 (line 14)
+ 608  AddP  === _  380  380  607  [[ 1251  1882 ]]  !orig=[1255],545 !jvms: Task::f @ bci:158 (line 22)
+ 583  ConI  ===  0  [[ 584  621  1886  1911 ]]  #int:24
+ 620  RShiftI  === _  610  581  [[ 621 ]]  !jvms: Task::f @ bci:163 (line 22)
+ 603  AddP  === _  380  380  602  [[ 1258  1890 ]]  !orig=[1259],1094,545 !jvms: Task::f @ bci:153 (line 22)
+ 1507  StoreI  ===  1033  1514  1511  1508  [[ 1258  1261 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[9] *, idx=6; !orig=547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 599  OrI  === _  1450  1522  [[ 600 ]]  !jvms: Task::f @ bci:144 (line 21)
+ 591  SubI  === _  570  590  [[ 600 ]]  !jvms: Task::f @ bci:132 (line 20)
+ 1827  ConL  ===  0  [[ 2019  2066 ]]  #long:12
+ 2033  ConNKlass  ===  0  [[ 2018  2065 ]]  #narrowklass: precise [int: :Constant:exact *
+ 2016  AddP  === _  1995  1995  1418  [[ 2018 ]] 
+ 2015  StoreL  ===  2032  2014  1995  1075  [[ 2018 ]]  @NULL  Memory: @rawptr:BotPTR, idx=Raw;
+ 602  ConL  ===  0  [[ 603  1509 ]]  #long:56
+ 592  ConL  ===  0  [[ 593  1460 ]]  #long:36
+ 596  ConL  ===  0  [[ 597  1532 ]]  #long:44
+ 839  ConL  ===  0  [[ 1515  1523 ]]  #long:48
+ 812  ConL  ===  0  [[ 1465  1457 ]]  #long:32
+ 826  ConL  ===  0  [[ 1529  1451 ]]  #long:40
+ 799  ConL  ===  0  [[ 1471  1283 ]]  #long:24
+ 567  ConL  ===  0  [[ 568  1474 ]]  #long:28
+ 847  ConL  ===  0  [[ 1511  1518 ]]  #long:52
+ 199  ConL  ===  0  [[ 1281  563 ]]  #long:20
+ 384  ConI  ===  0  [[ 1030 ]]  #int:1234
+ 746  AddI  === _  443  46  [[ 443  1030 ]]  !orig=[1029],... !jvms: Task::f @ bci:206 (line 15)
+ 2055  AddP  === _  2046  2047  2005  [[ 2056 ]] 
+ 2054  PrefetchAllocation  ===  2079  171  2053  [[ 2056 ]] 
+ 2071  AddP  === _  2046  2046  335  [[ 2081 ]] 
+ 2067  StoreI  ===  2079  2065  2066  158  [[ 2081 ]]  @NULL  Memory: @rawptr:BotPTR, idx=Raw;
+ 1993  AddP  === _  1  1989  1992  [[ 1994  2045 ]]  !orig=2044
+ 380  CheckCastPP  ===  377  1988  [[ 545  1511  1457  1094  608  593  597  1529  1511  1094  1529  1515  593  597  603  603  541  541  545  1515  1457  1471  1471  608  563  563  568  568 ]]  #int[int:20]:NotNull:exact * !orig=[1215],[1203] !jvms: Task::f @ bci:74 (line 14)
+ 1096  LoadI  ===  377  1251  1097  [[ 1093 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=528 !jvms: Task::f @ bci:106 (line 17)
+ 1094  AddP  === _  380  380  867  [[ 1093  1877 ]]  !orig=545 !jvms: Task::f @ bci:107 (line 17)
+ 1251  StoreI  ===  1033  1258  608  1252  [[ 1093  1096 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[11] *, idx=6; !orig=547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 621  URShiftI  === _  620  583  [[ 622 ]]  !jvms: Task::f @ bci:163 (line 22)
+ 1258  StoreI  ===  1033  1507  603  1261  [[ 1251  1252 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[10] *, idx=6; !orig=1093,547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 1261  LoadI  ===  377  1507  1262  [[ 1258  605 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1096,528 !jvms: Task::f @ bci:106 (line 17)
+ 600  XorI  === _  591  599  [[ 605 ]]  !jvms: Task::f @ bci:145 (line 21)
+ 607  ConL  ===  0  [[ 608  1262 ]]  #long:60
+ 2019  AddP  === _  1995  1995  1827  [[ 2020 ]] 
+ 2018  StoreNKlass  ===  2032  2015  2016  2033  [[ 2020 ]]  @NULL  Memory: @rawptr:BotPTR, idx=Raw;
+ 2002  ConL  ===  0  [[ 2003  2053 ]]  #long:192
+ 1509  AddP  === _  226  226  602  [[ 1508  1595  1313  1851  1854  1894 ]]  !orig=[526] !jvms: Task::f @ bci:106 (line 17)
+ 1599  StoreI  ===  1033  1605  1523  1601  [[ 1593  1595 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[8] *, idx=6; !orig=1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1460  AddP  === _  226  226  592  [[ 1459  1552  1560  1906  1861  1864 ]]  !orig=1097,[526] !jvms: Task::f @ bci:106 (line 17)
+ 1564  StoreI  ===  1033  1566  1474  1565  [[ 1558  1560 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[3] *, idx=6; !orig=1307,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1532  AddP  === _  226  226  596  [[ 1531  1605  1609  1857  1860  1902 ]]  !orig=1262,1097,[526] !jvms: Task::f @ bci:106 (line 17)
+ 1552  StoreI  ===  1033  1558  1460  1554  [[ 1607  1609 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[5] *, idx=6; !orig=729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1523  AddP  === _  226  226  839  [[ 1522  1599  1606  1855  1858  1900 ]]  !orig=1253,[526] !jvms: Task::f @ bci:106 (line 17)
+ 1607  StoreI  ===  1033  1552  1451  1609  [[ 1605  1606 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[6] *, idx=6; !orig=1313,1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1465  AddP  === _  226  226  812  [[ 1464  1565  1558  1914  1863  1866 ]]  !orig=1253,[526] !jvms: Task::f @ bci:106 (line 17)
+ 1566  StoreI  ===  1033  1280  1283  1568  [[ 1564  1565 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[2] *, idx=6; !orig=1313,1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1451  AddP  === _  226  226  826  [[ 1450  1554  1904  1607  1859  1862 ]]  !orig=[526] !jvms: Task::f @ bci:106 (line 17)
+ 1558  StoreI  ===  1033  1564  1465  1560  [[ 1552  1554 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[4] *, idx=6; !orig=1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1593  StoreI  ===  1033  1599  1518  1595  [[ 1313  1315 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[9] *, idx=6; !orig=729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1283  AddP  === _  226  226  799  [[ 1282  1211  1919  1566  1867  1870 ]]  !orig=[708] !jvms: Task::f @ bci:192 (line 25)
+ 1286  StoreI  ===  1033  547  336  1288  [[ 1280  1282 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[0] *, idx=6; !orig=1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1474  AddP  === _  226  226  567  [[ 1473  1564  1568  1916  1865  1868 ]]  !orig=1262,1097,[526] !jvms: Task::f @ bci:106 (line 17)
+ 1280  StoreI  ===  1033  1286  1281  1282  [[ 1566  1568 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[1] *, idx=6; !orig=729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1518  AddP  === _  226  226  847  [[ 1517  1593  1601  1853  1856  1896 ]]  !orig=1097,[526] !jvms: Task::f @ bci:106 (line 17)
+ 1605  StoreI  ===  1033  1607  1532  1606  [[ 1599  1601 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[7] *, idx=6; !orig=1307,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1281  AddP  === _  226  226  199  [[ 1280  1220  1288  1921  1869  1874 ]]  !orig=[727] !jvms: Task::f @ bci:193 (line 25)
+ 1030  CmpI  === _  746  384  [[ 1031 ]]  !orig=[752] !jvms: Task::f @ bci:85 (line 15)
+ 1994  LoadP  ===  354  310  1993  [[ 1997 ]]  @rawptr:BotPTR, idx=Raw; #rawptr:BotPTR (does not depend only on test)
+ 2057  AddP  === _  2046  2047  2008  [[ 2058 ]] 
+ 2056  PrefetchAllocation  === _  2054  2055  [[ 2058 ]] 
+ 1025  CmpI  === _  1024  158  [[ 1026 ]]  !orig=[350] !jvms: Task::f @ bci:53 (line 11)
+ 2081  ClearArray  ===  2079  2067  2036  2071  [[ 2039 ]]   Memory: @rawptr:BotPTR, idx=Raw; !orig=[2072]
+ 2045  LoadP  ===  189  172  1993  [[ 2048 ]]  @rawptr:BotPTR, idx=Raw; #rawptr:BotPTR (does not depend only on test)
+ 2047  AddP  === _  1  2046  207  [[ 2048  2053  2055  2057  2059  2061 ]] 
+ 335  ConL  ===  0  [[ 336  2071  541  2024 ]]  #long:16
+ 528  LoadI  ===  377  1093  744  [[ 547 ]]  @int[int:>=0]:exact+any *, idx=6; #int !jvms: Task::f @ bci:106 (line 17)
+ 545  AddP  === _  380  380  875  [[ 547  1875 ]]  !jvms: Task::f @ bci:107 (line 17)
+ 1093  StoreI  ===  1033  1251  1094  1096  [[ 528  547 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[12] *, idx=6; !orig=547,[679] !jvms: Task::f @ bci:107 (line 17)
+ 589  ConI  ===  0  [[ 590  625  1884  1909 ]]  #int:-256
+ 622  AddI  === _  621  610  [[ 625 ]]  !jvms: Task::f @ bci:163 (line 22)
+ 1252  LoadI  ===  377  1258  1253  [[ 1251  610 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=528 !jvms: Task::f @ bci:106 (line 17)
+ 605  AddI  === _  600  1261  [[ 610 ]]  !jvms: Task::f @ bci:154 (line 22)
+ 867  ConL  ===  0  [[ 1094  1253 ]]  #long:64
+ 1262  AddP  === _  226  226  607  [[ 1261  1307  1315  1849  1852  1892 ]]  !orig=1097,[526] !jvms: Task::f @ bci:106 (line 17)
+ 1313  StoreI  ===  1033  1593  1509  1315  [[ 1307  1309 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[10] *, idx=6; !orig=1125,729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 2024  AddP  === _  1995  1995  335  [[ 2037 ]] 
+ 2036  ConL  ===  0  [[ 2037  2081 ]]  #long:10
+ 2020  StoreI  ===  2032  2018  2019  158  [[ 2037 ]]  @NULL  Memory: @rawptr:BotPTR, idx=Raw;
+ 1990  ConL  ===  0  [[ 1991 ]]  #long:280
+ 1989  ThreadLocal  ===  0  [[ 1991  1993 ]]  !orig=[2042]
+ 2005  ConL  ===  0  [[ 2006  2055 ]]  #long:256
+ 2003  AddP  === _  1995  1996  2002  [[ 2004 ]] 
+ 846  ConI  ===  0  [[ 1712 ]]  #int:108
+ 1595  LoadI  ===  377  1599  1509  [[ 1593  1712 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 811  ConI  ===  0  [[ 1655 ]]  #int:100
+ 1560  LoadI  ===  377  1564  1460  [[ 1558  1655 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 874  ConI  ===  0  [[ 1170 ]]  #int:112
+ 825  ConI  ===  0  [[ 1637 ]]  #int:107
+ 1609  LoadI  ===  377  1552  1532  [[ 1607  1637 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1315,1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 832  ConI  ===  0  [[ 1730 ]]  #int:117
+ 1606  LoadI  ===  377  1607  1523  [[ 1605  1730 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1309,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 197  ConI  ===  0  [[ 1664 ]]  #int:23
+ 1565  LoadI  ===  377  1566  1465  [[ 1564  1664 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1309,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 859  ConI  ===  0  [[ 1384 ]]  #int:63
+ 1309  LoadI  ===  377  1313  1253  [[ 1307  1384 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 818  ConI  ===  0  [[ 1646 ]]  #int:94
+ 1554  LoadI  ===  377  1558  1451  [[ 1552  1646 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 853  ConI  ===  0  [[ 1703 ]]  #int:239
+ 1315  LoadI  ===  377  1593  1262  [[ 1313  1703 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 793  ConI  ===  0  [[ 1346 ]]  #int:169
+ 1282  LoadI  ===  377  1286  1283  [[ 1280  1346 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1568  LoadI  ===  377  1280  1474  [[ 1566  1337 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1315,1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 838  ConI  ===  0  [[ 1721 ]]  #int:131
+ 1601  LoadI  ===  377  1605  1518  [[ 1599  1721 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 866  ConI  ===  0  [[ 1375 ]]  #int:106
+ 787  ConI  ===  0  [[ 1146 ]]  #int:187
+ 1288  LoadI  ===  377  547  1281  [[ 1286  1146 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=1127,710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1031  Bool  === _  1030  [[ 1032 ]] [lt] !orig=[753] !jvms: Task::f @ bci:85 (line 15)
+ 198  ConI  ===  0  [[ 1084 ]]  #int:2
+ 1076  ConvI2L  === _  291  [[ 1084 ]]  #long:5..20:www
+ 1997  CmpP  === _  1996  1994  [[ 2029 ]] 
+ 2059  AddP  === _  2046  2047  2011  [[ 2060 ]] 
+ 2058  PrefetchAllocation  === _  2056  2057  [[ 2060 ]] 
+ 2079  IfTrue  ===  2077  [[ 2038  2081  2067  2065  2062  2061  2054 ]] #1 !orig=[2052]
+ 2074  CatchProj  ===  213  [[ 2038 ]] #0@bci -1  !orig=[214] !jvms: Task::f @ bci:45 (line 10)
+ 1026  Bool  === _  1025  [[ 1027 ]] [lt] !orig=[351] !jvms: Task::f @ bci:53 (line 11)
+ 2039  Phi  ===  2038  219  2081  [[ 225  222 ]]  #memory  Memory: @rawptr:BotPTR, idx=Raw;
+ 225  MergeMem  === _  1  2039  1  1  1  172  [[ 222 ]]  { - - - N172:int[int:>=0]:exact+any * }  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:45 (line 10)
+ 2048  CmpP  === _  2047  2045  [[ 2076 ]] 
+ 336  AddP  === _  226  226  335  [[ 628  1873  1286  1871 ]]  !orig=[1148],[965] !jvms: Task::f @ bci:65 (line 12)
+ 547  StoreI  ===  1033  1093  545  528  [[ 628  1288  1286 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[13] *, idx=6; !orig=[679] !jvms: Task::f @ bci:107 (line 17)
+ 625  AndI  === _  622  589  [[ 626 ]]  !jvms: Task::f @ bci:163 (line 22)
+ 610  AddI  === _  605  1252  [[ 622  620  626 ]]  !jvms: Task::f @ bci:159 (line 22)
+ 875  ConL  ===  0  [[ 545  1097 ]]  #long:68
+ 1127  LoadI  ===  377  1307  1097  [[ 1125  1375 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=710,[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1253  AddP  === _  226  226  867  [[ 1252  1309  1125  1847  1850  1889 ]]  !orig=[526] !jvms: Task::f @ bci:106 (line 17)
+ 1307  StoreI  ===  1033  1313  1262  1309  [[ 1125  1127 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[11] *, idx=6; !orig=729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 2037  ClearArray  ===  2032  2020  2036  2024  [[ 1986 ]]   Memory: @rawptr:BotPTR, idx=Raw; !orig=[2025]
+ 207  ConL  ===  0  [[ 2047  1996 ]]  #long:96
+ 1991  AddP  === _  1  1989  1990  [[ 1995  2014  2061  2046 ]]  !orig=2043
+ 2008  ConL  ===  0  [[ 2009  2057 ]]  #long:320
+ 2006  AddP  === _  1995  1996  2005  [[ 2007 ]] 
+ 2004  PrefetchAllocation  ===  2032  309  2003  [[ 2007 ]] 
+ 881  ConI  ===  0  [[ 987 ]]  #int:155
+ 1712  CmpI  === _  1595  846  [[ 1711 ]]  !orig=1170,987 !jvms: Task::f @ bci:341 (line 46)
+ 1655  CmpI  === _  1560  811  [[ 1654 ]]  !orig=1375,987 !jvms: Task::f @ bci:341 (line 46)
+ 1170  CmpI  === _  710  874  [[ 1169 ]]  !orig=987 !jvms: Task::f @ bci:341 (line 46)
+ 1637  CmpI  === _  1609  825  [[ 1636 ]]  !orig=987 !jvms: Task::f @ bci:341 (line 46)
+ 1730  CmpI  === _  1606  832  [[ 1729 ]]  !orig=1384,1170,987 !jvms: Task::f @ bci:341 (line 46)
+ 1664  CmpI  === _  1565  197  [[ 1663 ]]  !orig=1384,1170,987 !jvms: Task::f @ bci:341 (line 46)
+ 1384  CmpI  === _  1309  859  [[ 1383 ]]  !orig=1170,987 !jvms: Task::f @ bci:341 (line 46)
+ 1646  CmpI  === _  1554  818  [[ 1645 ]]  !orig=1170,987 !jvms: Task::f @ bci:341 (line 46)
+ 1703  CmpI  === _  1315  853  [[ 1702 ]]  !orig=987 !jvms: Task::f @ bci:341 (line 46)
+ 1346  CmpI  === _  1282  793  [[ 1345 ]]  !orig=1170,987 !jvms: Task::f @ bci:341 (line 46)
+ 1337  CmpI  === _  1568  158  [[ 1336 ]]  !orig=987 !jvms: Task::f @ bci:341 (line 46)
+ 1721  CmpI  === _  1601  838  [[ 1720 ]]  !orig=1375,987 !jvms: Task::f @ bci:341 (line 46)
+ 1375  CmpI  === _  1127  866  [[ 1374 ]]  !orig=987 !jvms: Task::f @ bci:341 (line 46)
+ 1146  CmpI  === _  1288  787  [[ 1145 ]]  !orig=987 !jvms: Task::f @ bci:341 (line 46)
+ 1032  CountedLoopEnd  ===  1033  1031  [[ 756  755 ]] [lt] P=0.900000, C=-1.000000 !orig=[754] !jvms: Task::f @ bci:85 (line 15)
+ 184  ConI  ===  0  [[ 185 ]]  #int:125
+ 174  Proj  ===  169  [[ 185 ]] #5 !jvms: Task::f @ bci:33 (line 8)
+ 136  Proj  ===  131  [[ 147 ]] #5 !jvms: Task::f @ bci:21 (line 6)
+ 57  Proj  ===  52  [[ 69 ]] #5 !jvms: Task::f @ bci:1 (line 3)
+ 1084  LShiftL  === _  1076  198  [[ 1087 ]] 
+ 2029  Bool  === _  1997  [[ 2030 ]] [lt]
+ 354  IfFalse  ===  1027  [[ 2030  1994  1995 ]] #0 !jvms: Task::f @ bci:53 (line 11)
+ 2046  LoadP  ===  189  172  1991  [[ 2047  2053  2055  2057  2059  2062  2063  2063  2066  2066  2071  2071  2041 ]]  @rawptr:BotPTR, idx=Raw; #rawptr:BotPTR (does not depend only on test)
+ 2075  Proj  ===  2073  [[ 2041 ]] #5 !orig=[221] !jvms: Task::f @ bci:45 (line 10)
+ 224  Proj  ===  222  [[ 290  289  288  287 ]] #2  Memory: @rawptr:BotPTR, idx=Raw; !orig=[282] !jvms: Task::f @ bci:45 (line 10)
+ 2060  PrefetchAllocation  === _  2058  2059  [[ 2040 ]] 
+ 2038  Region  ===  2038  2074  2079  [[ 2038  2039  2040  2041  222 ]]  !orig=[214] !jvms: Task::f @ bci:45 (line 10)
+ 1027  CountedLoopEnd  ===  315  1026  [[ 354  353 ]] [lt] P=0.900000, C=-1.000000 !orig=[352] !jvms: Task::f @ bci:53 (line 11)
+ 222  Initialize  ===  2038  1  225  1  1  1  2039  [[ 223  224 ]]  !jvms: Task::f @ bci:45 (line 10)
+ 2076  Bool  === _  2048  [[ 2077 ]] [lt]
+ 189  IfFalse  ===  187  [[ 2077  2045  2046 ]] #0 !jvms: Task::f @ bci:38 (line 8)
+ 108  CmpP  === _  93  22  [[ 109 ]]  !jvms: Task::f @ bci:21 (line 6)
+ 23  CmpP  === _  10  22  [[ 24 ]]  !jvms: Task::f @ bci:1 (line 3)
+ 628  LoadI  ===  377  547  336  [[ 629 ]]  @int[int:>=0]:exact+any *, idx=6; #int !jvms: Task::f @ bci:170 (line 23)
+ 626  SubI  === _  610  625  [[ 629 ]]  !jvms: Task::f @ bci:163 (line 22)
+ 743  ConL  ===  0  [[ 744 ]]  #long:72
+ 710  LoadI  ===  377  1125  744  [[ 729  1170 ]]  @int[int:>=0]:exact+any *, idx=6; #int !orig=[1171],[967] !jvms: Task::f @ bci:192 (line 25)
+ 1097  AddP  === _  226  226  875  [[ 1096  729  1127  1845  1848  1878 ]]  !orig=[526] !jvms: Task::f @ bci:106 (line 17)
+ 1125  StoreI  ===  1033  1307  1253  1127  [[ 710  729 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[12] *, idx=6; !orig=729,[1140] !jvms: Task::f @ bci:193 (line 25)
+ 755  IfTrue  ===  1032  [[ 1033 ]] #1 !jvms: Task::f @ bci:85 (line 15)
+ 377  Proj  ===  376  [[ 1873  380  1531  1508  1522  1450  528  1252  1459  1261  1464  1473  1096  628  1517  1211  1220  1844  1921  1920  1919  1917  1916  1915  1914  1907  1906  1905  1904  1903  1902  1901  1900  1897  1896  1895  1894  1893  1892  1890  1889  1882  1878  1877  1876  1875  1609  1127  1606  1595  1309  1554  1315  710  1560  1565  1568  1601  1282  1288  1033  1874  1871  1870  1869  1868  1867  1866  1865  1864  1863  1862  1861  1860  1859  1858  1857  1856  1855  1854  1853  1852  1851  1850  1849  1848  1847  1846  1845 ]] #0 !orig=[403] !jvms: Task::f @ bci:74 (line 14)
+ 1986  Phi  ===  1985  373  2037  [[ 379  376 ]]  #memory  Memory: @rawptr:BotPTR, idx=Raw;
+ 379  MergeMem  === _  1  1986  1  1  1  342  [[ 376 ]]  { - - - N342:int[int:>=0]:exact+any * }  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:74 (line 14)
+ 2011  ConL  ===  0  [[ 2012  2059 ]]  #long:384
+ 1996  AddP  === _  1  1995  207  [[ 1997  2003  2006  2009  2012  2014 ]] 
+ 1995  LoadP  ===  354  310  1991  [[ 1996  2003  2006  2009  2012  2015  2016  2016  2019  2019  2024  2024  1988 ]]  @rawptr:BotPTR, idx=Raw; #rawptr:BotPTR (does not depend only on test)
+ 2009  AddP  === _  1995  1996  2008  [[ 2010 ]] 
+ 2007  PrefetchAllocation  === _  2004  2006  [[ 2010 ]] 
+ 987  CmpI  === _  629  881  [[ 988 ]]  !jvms: Task::f @ bci:341 (line 46)
+ 1711  Bool  === _  1712  [[ 1749 ]] [ne] !orig=1169,988 !jvms: Task::f @ bci:341 (line 46)
+ 1748  IfFalse  ===  1747  [[ 1749 ]] #0 !orig=1397,991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1654  Bool  === _  1655  [[ 1681 ]] [ne] !orig=1374,988 !jvms: Task::f @ bci:341 (line 46)
+ 1680  IfFalse  ===  1679  [[ 1681 ]] #0 !orig=1395,1182,991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1169  Bool  === _  1170  [[ 1181 ]] [ne] !orig=988 !jvms: Task::f @ bci:341 (line 46)
+ 1397  IfFalse  ===  1396  [[ 1181 ]] #0 !orig=991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1636  Bool  === _  1637  [[ 1685 ]] [ne] !orig=988 !jvms: Task::f @ bci:341 (line 46)
+ 1684  IfFalse  ===  1683  [[ 1685 ]] #0 !orig=1182,991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1729  Bool  === _  1730  [[ 1745 ]] [ne] !orig=1383,1169,988 !jvms: Task::f @ bci:341 (line 46)
+ 1686  IfFalse  ===  1685  [[ 1745 ]] #0 !orig=991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1663  Bool  === _  1664  [[ 1679 ]] [ne] !orig=1383,1169,988 !jvms: Task::f @ bci:341 (line 46)
+ 1359  IfFalse  ===  1358  [[ 1679 ]] #0 !orig=991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1383  Bool  === _  1384  [[ 1394 ]] [ne] !orig=1169,988 !jvms: Task::f @ bci:341 (line 46)
+ 1752  IfFalse  ===  1751  [[ 1394 ]] #0 !orig=991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1645  Bool  === _  1646  [[ 1683 ]] [ne] !orig=1169,988 !jvms: Task::f @ bci:341 (line 46)
+ 1682  IfFalse  ===  1681  [[ 1683 ]] #0 !orig=1397,991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1702  Bool  === _  1703  [[ 1751 ]] [ne] !orig=988 !jvms: Task::f @ bci:341 (line 46)
+ 1750  IfFalse  ===  1749  [[ 1751 ]] #0 !orig=1182,991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1345  Bool  === _  1346  [[ 1356 ]] [ne] !orig=1169,988 !jvms: Task::f @ bci:341 (line 46)
+ 1158  IfFalse  ===  1157  [[ 1356 ]] #0 !orig=991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1336  Bool  === _  1337  [[ 1358 ]] [ne] !orig=988 !jvms: Task::f @ bci:341 (line 46)
+ 1357  IfFalse  ===  1356  [[ 1358 ]] #0 !orig=1182,991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1720  Bool  === _  1721  [[ 1747 ]] [ne] !orig=1374,988 !jvms: Task::f @ bci:341 (line 46)
+ 1746  IfFalse  ===  1745  [[ 1747 ]] #0 !orig=1395,1182,991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1374  Bool  === _  1375  [[ 1396 ]] [ne] !orig=988 !jvms: Task::f @ bci:341 (line 46)
+ 1395  IfFalse  ===  1394  [[ 1396 ]] #0 !orig=1182,991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1145  Bool  === _  1146  [[ 1157 ]] [ne] !orig=988 !jvms: Task::f @ bci:341 (line 46)
+ 756  IfFalse  ===  1032  [[ 1157 ]] #0 !jvms: Task::f @ bci:85 (line 15)
+ 185  CmpI  === _  174  184  [[ 186 ]]  !jvms: Task::f @ bci:38 (line 8)
+ 147  CmpI  === _  136  44  [[ 148 ]]  !jvms: Task::f @ bci:24 (line 6)
+ 69  CmpI  === _  57  68  [[ 70 ]]  !jvms: Task::f @ bci:8 (line 4)
+ 1088  ConL  ===  0  [[ 340 ]]  #long:-4
+ 1087  AddP  === _  226  226  1084  [[ 340 ]] 
+ 2030  If  ===  354  2029  [[ 2031  2032 ]] P=0.999900, C=-1.000000 !orig=[1999]
+ 295  ConI  ===  0  [[ 296 ]]  #int:-5
+ 2041  Phi  ===  2038  2075  2046  [[ 226 ]]  #rawptr:BotPTR !orig=[221] !jvms: Task::f @ bci:45 (line 10)
+ 1024  AddI  === _  291  46  [[ 291  1025 ]]  !orig=[343] !jvms: Task::f @ bci:66 (line 11)
+ 290  Phi  ===  1028  224  342  [[ 292 ]]  #memory  Memory: @int[int:>=0]:exact+any *, idx=6; !jvms: Task::f @ bci:56 (line 12)
+ 289  Phi  ===  1028  224  310  [[ 292 ]]  #memory  Memory: @java/lang/Object *, idx=5; !jvms: Task::f @ bci:56 (line 12)
+ 288  Phi  ===  1028  224  310  [[ 292 ]]  #memory  Memory: @java/lang/Object+8 * [narrowklass], idx=4; !jvms: Task::f @ bci:56 (line 12)
+ 287  Phi  ===  1028  224  310  [[ 292 ]]  #memory  Memory: @rawptr:BotPTR, idx=Raw; !jvms: Task::f @ bci:56 (line 12)
+ 286  Phi  ===  1028  172  310  [[ 292 ]]  #memory  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:56 (line 12)
+ 2040  Phi  ===  2038  171  2060  [[ 285 ]]  #abIO
+ 353  IfTrue  ===  1027  [[ 1028 ]] #1 !jvms: Task::f @ bci:53 (line 11)
+ 223  Proj  ===  222  [[ 1028  226 ]] #0 !orig=[249],[262] !jvms: Task::f @ bci:45 (line 10)
+ 2077  If  ===  189  2076  [[ 2078  2079 ]] P=0.999900, C=-1.000000 !orig=[2050]
+ 109  Bool  === _  108  [[ 112 ]] [ne] !jvms: Task::f @ bci:21 (line 6)
+ 96  CatchProj  ===  95  [[ 112 ]] #0@bci -1  !jvms: Task::f @ bci:16 (line 6)
+ 24  Bool  === _  23  [[ 27 ]] [ne] !jvms: Task::f @ bci:1 (line 3)
+ 5  Parm  ===  3  [[ 27 ]] Control !jvms: Task::f @ bci:-1 (line 3)
+ 629  XorI  === _  626  628  [[ 745  987 ]]  !orig=[967] !jvms: Task::f @ bci:171 (line 23)
+ 744  AddP  === _  226  226  743  [[ 745  528  710  1844  1846  1876 ]]  !orig=[526] !jvms: Task::f @ bci:205 (line 27)
+ 729  StoreI  ===  1033  1125  1097  710  [[ 745 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[13] *, idx=6; !orig=[1140] !jvms: Task::f @ bci:193 (line 25)
+ 1033  CountedLoop  ===  1033  377  755  [[ 1033  1210  442  443  1528  1521  1251  1456  547  1463  1258  1470  1514  1093  1507  1217  1280  1449  1552  1032  1286  745  1593  729  1566  1125  1564  1313  1558  1307  1605  1599  1607 ]] inner stride: 1  !orig=[1020],[436] !jvms: Task::f @ bci:88 (line 16)
+ 376  Initialize  ===  1985  1  379  1  1  1  1986  [[ 377  378 ]]  !jvms: Task::f @ bci:74 (line 14)
+ 2012  AddP  === _  1995  1996  2011  [[ 2013 ]] 
+ 2010  PrefetchAllocation  === _  2007  2009  [[ 2013 ]] 
+ 2032  IfTrue  ===  2030  [[ 1985  2037  2020  2018  2015  2014  2004 ]] #1 !orig=[2001]
+ 2027  CatchProj  ===  367  [[ 1985 ]] #0@bci -1  !orig=[368] !jvms: Task::f @ bci:74 (line 14)
+ 988  Bool  === _  987  [[ 989 ]] [ne] !jvms: Task::f @ bci:341 (line 46)
+ 1182  IfFalse  ===  1181  [[ 989 ]] #0 !orig=991,999 !jvms: Task::f @ bci:341 (line 46)
+ 1749  If  ===  1748  1711  [[ 1750  1759 ]] P=0.100000, C=-1.000000 !orig=1181,989 !jvms: Task::f @ bci:341 (line 46)
+ 1681  If  ===  1680  1654  [[ 1682  1693 ]] P=0.100000, C=-1.000000 !orig=1396,989 !jvms: Task::f @ bci:341 (line 46)
+ 1181  If  ===  1397  1169  [[ 1182  1185 ]] P=0.100000, C=-1.000000 !orig=989 !jvms: Task::f @ bci:341 (line 46)
+ 1685  If  ===  1684  1636  [[ 1686  1697 ]] P=0.100000, C=-1.000000 !orig=989 !jvms: Task::f @ bci:341 (line 46)
+ 1745  If  ===  1686  1729  [[ 1746  1755 ]] P=0.100000, C=-1.000000 !orig=1394,1181,989 !jvms: Task::f @ bci:341 (line 46)
+ 1679  If  ===  1359  1663  [[ 1680  1691 ]] P=0.100000, C=-1.000000 !orig=1394,1181,989 !jvms: Task::f @ bci:341 (line 46)
+ 1394  If  ===  1752  1383  [[ 1395  1403 ]] P=0.100000, C=-1.000000 !orig=1181,989 !jvms: Task::f @ bci:341 (line 46)
+ 1683  If  ===  1682  1645  [[ 1684  1695 ]] P=0.100000, C=-1.000000 !orig=1181,989 !jvms: Task::f @ bci:341 (line 46)
+ 1751  If  ===  1750  1702  [[ 1752  1761 ]] P=0.100000, C=-1.000000 !orig=989 !jvms: Task::f @ bci:341 (line 46)
+ 1356  If  ===  1158  1345  [[ 1357  1367 ]] P=0.100000, C=-1.000000 !orig=1181,989 !jvms: Task::f @ bci:341 (line 46)
+ 1358  If  ===  1357  1336  [[ 1359  1369 ]] P=0.100000, C=-1.000000 !orig=989 !jvms: Task::f @ bci:341 (line 46)
+ 1747  If  ===  1746  1720  [[ 1748  1757 ]] P=0.100000, C=-1.000000 !orig=1396,989 !jvms: Task::f @ bci:341 (line 46)
+ 1396  If  ===  1395  1374  [[ 1397  1405 ]] P=0.100000, C=-1.000000 !orig=989 !jvms: Task::f @ bci:341 (line 46)
+ 1157  If  ===  756  1145  [[ 1158  1163 ]] P=0.100000, C=-1.000000 !orig=989 !jvms: Task::f @ bci:341 (line 46)
+ 186  Bool  === _  185  [[ 187 ]] [ne] !jvms: Task::f @ bci:38 (line 8)
+ 177  CatchProj  ===  176  [[ 187 ]] #0@bci -1  !jvms: Task::f @ bci:33 (line 8)
+ 148  Bool  === _  147  [[ 149 ]] [ne] !jvms: Task::f @ bci:24 (line 6)
+ 139  CatchProj  ===  138  [[ 149 ]] #0@bci -1  !jvms: Task::f @ bci:21 (line 6)
+ 70  Bool  === _  69  [[ 71 ]] [ne] !jvms: Task::f @ bci:8 (line 4)
+ 60  CatchProj  ===  59  [[ 71 ]] #0@bci -1  !jvms: Task::f @ bci:1 (line 3)
+ 312  Proj  ===  307  [[ 342 ]] #5 !jvms: Task::f @ bci:62 (line 12)
+ 340  AddP  === _  226  1087  1088  [[ 342 ]]  !jvms: Task::f @ bci:65 (line 12)
+ 315  CatchProj  ===  314  [[ 1027  342 ]] #0@bci -1  !orig=[325],344 !jvms: Task::f @ bci:62 (line 12)
+ 193  ConP  ===  0  [[ 2026 ]]  #precise [int: :Constant:exact *  Klass:precise [int: :Constant:exact *
+ 355  MergeMem  === _  1  310  1  1  1  342  [[ 2026 ]]  { - - - N342:int[int:>=0]:exact+any * }  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:53 (line 11)
+ 2031  IfFalse  ===  2030  [[ 2026 ]] #0 !orig=[2000]
+ 296  AddI  === _  291  295  [[ 307 ]]  !orig=[337] !jvms: Task::f @ bci:59 (line 12)
+ 226  CheckCastPP  ===  223  2041  [[ 1253  1281  1253  1523  1460  1465  1518  1532  1460  307  307  1518  1465  1281  1283  336  336  340  1523  1087  1283  2026  1262  1509  1097  1451  1097  1509  744  1532  1262  1474  744  1087  1451  1474 ]]  #int[int:20]:NotNull:exact * !orig=[1149],[966] !jvms: Task::f @ bci:45 (line 10)
+ 291  Phi  ===  1028  77  1024  [[ 307  1076  296  307  1024 ]]  #int:5..20:www #tripcount !jvms: Task::f @ bci:56 (line 12)
+ 292  MergeMem  === _  1  286  287  288  289  290  [[ 307 ]]  { N287:rawptr:BotPTR N288:java/lang/Object+8 * [narrowklass] N289:java/lang/Object * N290:int[int:>=0]:exact+any * }  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:56 (line 12)
+ 285  Phi  ===  1028  2040  309  [[ 307 ]]  #abIO !jvms: Task::f @ bci:56 (line 12)
+ 1028  CountedLoop  ===  1028  223  353  [[ 1028  307  285  286  287  288  289  290  291 ]] inner stride: 1  !orig=[1019],[284] !jvms: Task::f @ bci:56 (line 12)
+ 2083  ConP  ===  0  [[ 2073 ]]  #precise [int: :Constant:exact *  Klass:precise [int: :Constant:exact *
+ 2078  IfFalse  ===  2077  [[ 2073 ]] #0 !orig=[2051]
+ 158  ConI  ===  0  [[ 1025  2067  169  2020  1337  2073  2026 ]]  #int:20
+ 150  IfTrue  ===  149  [[ 169 ]] #1 !jvms: Task::f @ bci:24 (line 6)
+ 93  Proj  ===  88  [[ 131  108 ]] #5  Oop:java/lang/String:exact * !jvms: Task::f @ bci:16 (line 6)
+ 113  IfTrue  ===  112  [[ 131 ]] #1 !jvms: Task::f @ bci:21 (line 6)
+ 68  ConI  ===  0  [[ 69  88  131 ]]  #int:21
+ 77  ConI  ===  0  [[ 88  291 ]]  #int:5
+ 73  IfFalse  ===  71  [[ 88 ]] #0 !jvms: Task::f @ bci:8 (line 4)
+ 10  Parm  ===  3  [[ 88  23  2073  52  52  169  169  131  307  307  88 ]] Parm0: java/lang/String:exact *  Oop:java/lang/String:exact * !jvms: Task::f @ bci:-1 (line 3)
+ 28  IfTrue  ===  27  [[ 52 ]] #1 !jvms: Task::f @ bci:1 (line 3)
+ 364  Proj  ===  2026  [[ 367 ]] #0 !jvms: Task::f @ bci:74 (line 14)
+ 308  Proj  ===  307  [[ 314 ]] #0 !jvms: Task::f @ bci:62 (line 12)
+ 210  Proj  ===  2073  [[ 213 ]] #0 !jvms: Task::f @ bci:45 (line 10)
+ 170  Proj  ===  169  [[ 176 ]] #0 !jvms: Task::f @ bci:33 (line 8)
+ 132  Proj  ===  131  [[ 138 ]] #0 !jvms: Task::f @ bci:21 (line 6)
+ 89  Proj  ===  88  [[ 95 ]] #0 !jvms: Task::f @ bci:16 (line 6)
+ 53  Proj  ===  52  [[ 59 ]] #0 !jvms: Task::f @ bci:1 (line 3)
+ 112  If  ===  96  109  [[ 113  114 ]] P=0.999999, C=-1.000000 !jvms: Task::f @ bci:21 (line 6)
+ 27  If  ===  5  24  [[ 28  29 ]] P=0.999999, C=-1.000000 !jvms: Task::f @ bci:1 (line 3)
+ 745  StoreI  ===  1033  729  744  629  [[ 997  442  997 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact[14] *, idx=6; !orig=1953 !jvms: Task::f @ bci:205 (line 27)
+ 378  Proj  ===  376  [[ 1920  996  996  1921  994  995  994  995 ]] #2  Memory: @rawptr:BotPTR, idx=Raw; !orig=[434] !jvms: Task::f @ bci:74 (line 14)
+ 2013  PrefetchAllocation  === _  2010  2012  [[ 1987 ]] 
+ 1985  Region  ===  1985  2027  2032  [[ 1985  1986  1987  1988  376 ]]  !orig=[368] !jvms: Task::f @ bci:74 (line 14)
+ 989  If  ===  1182  988  [[ 990  991 ]] P=0.100000, C=-1.000000 !jvms: Task::f @ bci:341 (line 46)
+ 1759  IfTrue  ===  1749  [[ 1164 ]] #1 !orig=1185,990 !jvms: Task::f @ bci:341 (line 46)
+ 1693  IfTrue  ===  1681  [[ 1164 ]] #1 !orig=1405,990 !jvms: Task::f @ bci:341 (line 46)
+ 1185  IfTrue  ===  1181  [[ 1164 ]] #1 !orig=990 !jvms: Task::f @ bci:341 (line 46)
+ 1697  IfTrue  ===  1685  [[ 1164 ]] #1 !orig=990 !jvms: Task::f @ bci:341 (line 46)
+ 1755  IfTrue  ===  1745  [[ 1164 ]] #1 !orig=1403,1185,990 !jvms: Task::f @ bci:341 (line 46)
+ 1691  IfTrue  ===  1679  [[ 1164 ]] #1 !orig=1403,1185,990 !jvms: Task::f @ bci:341 (line 46)
+ 1403  IfTrue  ===  1394  [[ 1164 ]] #1 !orig=1185,990 !jvms: Task::f @ bci:341 (line 46)
+ 1695  IfTrue  ===  1683  [[ 1164 ]] #1 !orig=1185,990 !jvms: Task::f @ bci:341 (line 46)
+ 1761  IfTrue  ===  1751  [[ 1164 ]] #1 !orig=990 !jvms: Task::f @ bci:341 (line 46)
+ 1367  IfTrue  ===  1356  [[ 1164 ]] #1 !orig=1185,990 !jvms: Task::f @ bci:341 (line 46)
+ 990  IfTrue  ===  989  [[ 1164 ]] #1 !jvms: Task::f @ bci:341 (line 46)
+ 1369  IfTrue  ===  1358  [[ 1164 ]] #1 !orig=990 !jvms: Task::f @ bci:341 (line 46)
+ 1757  IfTrue  ===  1747  [[ 1164 ]] #1 !orig=1405,990 !jvms: Task::f @ bci:341 (line 46)
+ 1405  IfTrue  ===  1396  [[ 1164 ]] #1 !orig=990 !jvms: Task::f @ bci:341 (line 46)
+ 1163  IfTrue  ===  1157  [[ 1164 ]] #1 !orig=990 !jvms: Task::f @ bci:341 (line 46)
+ 187  If  ===  177  186  [[ 188  189 ]] P=0.900000, C=-1.000000 !jvms: Task::f @ bci:38 (line 8)
+ 149  If  ===  139  148  [[ 150  151 ]] P=0.900000, C=-1.000000 !jvms: Task::f @ bci:24 (line 6)
+ 71  If  ===  60  70  [[ 72  73 ]] P=0.900000, C=-1.000000 !jvms: Task::f @ bci:8 (line 4)
+ 342  StoreI  ===  315  310  340  312  [[ 383  290  355  379 ]]  @int[int:>=0]:exact+any *, idx=6;  Memory: @int[int:20]:NotNull:exact+any *, idx=6; !jvms: Task::f @ bci:65 (line 12)
+ 373  Proj  ===  2026  [[ 229  1986 ]] #2  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:74 (line 14)
+ 219  Proj  ===  2073  [[ 229  2039 ]] #2  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:45 (line 10)
+ 310  Proj  ===  307  [[ 15  383  105  229  2014  15  1994  342  1995  289  355  105  286  287  288 ]] #2  Memory: @BotPTR *+bot, idx=Bot; !orig=[430] !jvms: Task::f @ bci:62 (line 12)
+ 172  Proj  ===  169  [[ 997  996  105  995  15  286  2073  994  225  105  229  2061  383  2045  383  2046 ]] #2  Memory: @BotPTR *+bot, idx=Bot; !orig=[278] !jvms: Task::f @ bci:33 (line 8)
+ 134  Proj  ===  131  [[ 997  996  105  995  15  994  169  229  383 ]] #2  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:21 (line 6)
+ 55  Proj  ===  52  [[ 997  105  996  15  995  88  229  383  994 ]] #2  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:1 (line 3)
+ 2026  CallStaticJava  ===  2031  1  355  8  1 ( 193  158  1  1  226  1  1  1  1  1 ) [[ 2028  374  373  364 ]] # Static _new_array_Java  rawptr:NotNull ( java/lang/Object:NotNull *, int ) C=0.000100 Task::f @ bci:74 (line 14) !orig=363 !jvms: Task::f @ bci:74 (line 14)
+ 307  CallStaticJava  ===  1028  285  292  8  1 ( 10  291  10  1  226  291  1  1  1  1  226  296 ) [[ 308  309  310  312 ]] # Static  java.lang.String::charAt char ( java/lang/String:NotNull:exact *, int ) Task::f @ bci:62 (line 12) !jvms: Task::f @ bci:62 (line 12)
+ 2073  CallStaticJava  ===  2078  1  172  8  1 ( 2083  158  10  1  1  1  1  1  1  1 ) [[ 2075  220  219  210 ]] # Static _new_array_Java  rawptr:NotNull ( java/lang/Object:NotNull *, int ) C=0.000100 Task::f @ bci:45 (line 10) !orig=209 !jvms: Task::f @ bci:45 (line 10)
+ 169  CallStaticJava  ===  150  133  134  8  1 ( 10  158  10  1  1  1  1  1  1  1 ) [[ 170  171  172  174 ]] # Static  java.lang.String::charAt char ( java/lang/String:NotNull:exact *, int ) Task::f @ bci:33 (line 8) !jvms: Task::f @ bci:33 (line 8)
+ 131  CallStaticJava  ===  113  90  91  8  1 ( 93  107  10  68  1  1  1  1  1  1 ) [[ 132  133  134  136 ]] # Static  java.lang.String::equals bool ( java/lang/String:NotNull:exact *, java/lang/Object * ) Task::f @ bci:21 (line 6) !jvms: Task::f @ bci:21 (line 6)
+ 88  CallStaticJava  ===  73  54  55  8  1 ( 10  44  77  10  68  1  1  1  1  1  1 ) [[ 89  90  91  93 ]] # Static  java.lang.String::substring java/lang/String:exact * ( java/lang/String:NotNull:exact *, int, int ) Task::f @ bci:16 (line 6) !jvms: Task::f @ bci:16 (line 6)
+ 52  CallStaticJava  ===  28  6  7  8  1 ( 10  10  1  1  1  1  1  1  1 ) [[ 53  54  55  57 ]] # Static  java.lang.String::length int ( java/lang/String:NotNull:exact * ) Task::f @ bci:1 (line 3) !jvms: Task::f @ bci:1 (line 3)
+ 367  Catch  ===  364  374  [[ 2027  369 ]]  !jvms: Task::f @ bci:74 (line 14)
+ 314  Catch  ===  308  309  [[ 315  316 ]]  !jvms: Task::f @ bci:62 (line 12)
+ 213  Catch  ===  210  220  [[ 2074  215 ]]  !jvms: Task::f @ bci:45 (line 10)
+ 176  Catch  ===  170  171  [[ 177  178 ]]  !jvms: Task::f @ bci:33 (line 8)
+ 138  Catch  ===  132  133  [[ 139  140 ]]  !jvms: Task::f @ bci:21 (line 6)
+ 95  Catch  ===  89  90  [[ 96  97 ]]  !jvms: Task::f @ bci:16 (line 6)
+ 59  Catch  ===  53  54  [[ 60  61 ]]  !jvms: Task::f @ bci:1 (line 3)
+ 107  ConP  ===  0  [[ 131  115 ]]  #java/lang/String:exact *  Oop:java/lang/String:exact *
+ 30  ConI  ===  0  [[ 115 ]]  #int:-10
+ 91  Proj  ===  88  [[ 229  131  105  383  115 ]] #2  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:16 (line 6)
+ 114  IfFalse  ===  112  [[ 115 ]] #0 !jvms: Task::f @ bci:21 (line 6)
+ 22  ConP  ===  0  [[ 23  31  108  115 ]]  #NULL
+ 2082  ConI  ===  0  [[ 31 ]]  #int:-10
+ 7  Parm  ===  3  [[ 52  31 ]] Memory  Memory: @BotPTR *+bot, idx=Bot; !jvms: Task::f @ bci:-1 (line 3)
+ 6  Parm  ===  3  [[ 31  52 ]] I_O !jvms: Task::f @ bci:-1 (line 3)
+ 29  IfFalse  ===  27  [[ 31 ]] #0 !jvms: Task::f @ bci:1 (line 3)
+ 46  ConI  ===  0  [[ 17  746  1024  443 ]]  #int:1
+ 44  ConI  ===  0  [[ 17  17  17  147  17  88 ]]  #int:0
+ 997  Phi  ===  13  55  134  172  745  745  [[ 16 ]]  #memory  Memory: @int[int:>=0]:exact+any *, idx=6; !orig=15
+ 996  Phi  ===  13  55  134  172  378  378  [[ 16 ]]  #memory  Memory: @java/lang/Object *, idx=5; !orig=15
+ 995  Phi  ===  13  55  134  172  378  378  [[ 16 ]]  #memory  Memory: @java/lang/Object+8 * [narrowklass], idx=4; !orig=15
+ 994  Phi  ===  13  55  134  172  378  378  [[ 16 ]]  #memory  Memory: @rawptr:BotPTR, idx=Raw; !orig=15
+ 15  Phi  ===  13  55  134  172  310  310  [[ 16 ]]  #memory  Memory: @BotPTR *+bot, idx=Bot;
+ 1987  Phi  ===  1985  309  2013  [[ 14  14 ]]  #abIO
+ 991  IfFalse  ===  989  [[ 13 ]] #0 !orig=999 !jvms: Task::f @ bci:341 (line 46)
+ 1164  Region  ===  1164  1163  1405  1757  1369  990  1367  1761  1695  1403  1691  1755  1697  1185  1693  1759  [[ 1164  13 ]] 
+ 188  IfTrue  ===  187  [[ 13 ]] #1 !jvms: Task::f @ bci:38 (line 8)
+ 151  IfFalse  ===  149  [[ 13 ]] #0 !jvms: Task::f @ bci:24 (line 6)
+ 72  IfTrue  ===  71  [[ 13 ]] #1 !jvms: Task::f @ bci:8 (line 4)
+ 372  CreateEx  ===  369  374  [[ 106 ]]  #java/lang/Throwable:NotNull *  Oop:java/lang/Throwable:NotNull * !jvms: Task::f @ bci:74 (line 14)
+ 319  CreateEx  ===  316  309  [[ 106 ]]  #java/lang/Throwable:NotNull *  Oop:java/lang/Throwable:NotNull * !jvms: Task::f @ bci:62 (line 12)
+ 218  CreateEx  ===  215  220  [[ 106 ]]  #java/lang/Throwable:NotNull *  Oop:java/lang/Throwable:NotNull * !jvms: Task::f @ bci:45 (line 10)
+ 181  CreateEx  ===  178  171  [[ 106 ]]  #java/lang/Throwable:NotNull *  Oop:java/lang/Throwable:NotNull * !jvms: Task::f @ bci:33 (line 8)
+ 143  CreateEx  ===  140  133  [[ 106 ]]  #java/lang/Throwable:NotNull *  Oop:java/lang/Throwable:NotNull * !jvms: Task::f @ bci:21 (line 6)
+ 100  CreateEx  ===  97  90  [[ 106 ]]  #java/lang/Throwable:NotNull *  Oop:java/lang/Throwable:NotNull * !jvms: Task::f @ bci:16 (line 6)
+ 64  CreateEx  ===  61  54  [[ 106 ]]  #java/lang/Throwable:NotNull *  Oop:java/lang/Throwable:NotNull * !jvms: Task::f @ bci:1 (line 3)
+ 383  Phi  ===  103  55  91  134  172  172  310  342  [[ 1012 ]]  #memory  Memory: @int[int:>=0]:exact+any *, idx=6; !orig=105,... !jvms: Task::f @ bci:16 (line 6)
+ 229  Phi  ===  103  55  91  134  172  219  310  373  [[ 1012 ]]  #memory  Memory: @rawptr:BotPTR, idx=Raw; !orig=105,... !jvms: Task::f @ bci:16 (line 6)
+ 105  Phi  ===  103  55  91  134  172  172  310  310  [[ 1012 ]]  #memory  Memory: @BotPTR *+bot, idx=Bot; !orig=[785],... !jvms: Task::f @ bci:16 (line 6)
+ 374  Proj  ===  2026  [[ 367  372  104 ]] #1 !orig=[429] !jvms: Task::f @ bci:74 (line 14)
+ 309  Proj  ===  307  [[ 104  314  2004  319  285  1987 ]] #1 !jvms: Task::f @ bci:62 (line 12)
+ 220  Proj  ===  2073  [[ 213  218  104 ]] #1 !orig=[277] !jvms: Task::f @ bci:45 (line 10)
+ 171  Proj  ===  169  [[ 14  176  2054  181  104  2040 ]] #1 !jvms: Task::f @ bci:33 (line 8)
+ 133  Proj  ===  131  [[ 14  138  169  143  104 ]] #1 !jvms: Task::f @ bci:21 (line 6)
+ 90  Proj  ===  88  [[ 131  95  115  100  104 ]] #1 !jvms: Task::f @ bci:16 (line 6)
+ 54  Proj  ===  52  [[ 14  59  88  64  104 ]] #1 !jvms: Task::f @ bci:1 (line 3)
+ 369  CatchProj  ===  367  [[ 103  372 ]] #1@bci -1  !jvms: Task::f @ bci:74 (line 14)
+ 316  CatchProj  ===  314  [[ 103  319 ]] #1@bci -1  !jvms: Task::f @ bci:62 (line 12)
+ 215  CatchProj  ===  213  [[ 103  218 ]] #1@bci -1  !jvms: Task::f @ bci:45 (line 10)
+ 178  CatchProj  ===  176  [[ 103  181 ]] #1@bci -1  !jvms: Task::f @ bci:33 (line 8)
+ 140  CatchProj  ===  138  [[ 103  143 ]] #1@bci -1  !jvms: Task::f @ bci:21 (line 6)
+ 97  CatchProj  ===  95  [[ 103  100 ]] #1@bci -1  !jvms: Task::f @ bci:16 (line 6)
+ 61  CatchProj  ===  59  [[ 103  64 ]] #1@bci -1  !jvms: Task::f @ bci:1 (line 3)
+ 115  CallStaticJava  ===  114  90  91  8  9 ( 30  1  1  1  1  1  1  1  1  22  107 ) [[ 116 ]] # Static uncommon_trap(reason='null_check' action='maybe_recompile' debug_id='0')  void ( int ) C=0.000100 Task::f @ bci:21 (line 6) !jvms: Task::f @ bci:21 (line 6)
+ 3  Start  ===  3  0  [[ 3  5  6  7  8  9  10 ]]  #{0:control, 1:abIO, 2:memory, 3:rawptr:BotPTR, 4:return_address, 5:java/lang/String:exact *}
+ 31  CallStaticJava  ===  29  6  7  8  9 ( 2082  1  1  1  1  1  1  1  1  22 ) [[ 32 ]] # Static uncommon_trap(reason='null_check' action='maybe_recompile' debug_id='0')  void ( int ) C=0.000100 Task::f @ bci:1 (line 3) !jvms: Task::f @ bci:1 (line 3)
+ 17  Phi  ===  13  44  44  44  44  46  [[ 1014 ]]  #bool
+ 16  MergeMem  === _  1  15  994  995  996  997  [[ 1014 ]]  { N994:rawptr:BotPTR N995:java/lang/Object+8 * [narrowklass] N996:java/lang/Object * N997:int[int:>=0]:exact+any * }  Memory: @BotPTR *+bot, idx=Bot;
+ 14  Phi  ===  13  54  133  171  1987  1987  [[ 1014 ]]  #abIO
+ 13  Region  ===  13  72  151  188  1164  991  [[ 13  997  14  15  17  994  995  996  1014 ]] 
+ 106  Phi  ===  103  64  100  143  181  218  319  372  [[ 1015 ]]  #java/lang/Throwable:NotNull *  Oop:java/lang/Throwable:NotNull * !jvms: Task::f @ bci:16 (line 6)
+ 9  Parm  ===  3  [[ 1015  1014  115  31 ]] ReturnAdr !jvms: Task::f @ bci:-1 (line 3)
+ 1012  MergeMem  === _  1  105  229  1  1  383  [[ 1015 ]]  { N229:rawptr:BotPTR - - N383:int[int:>=0]:exact+any * }  Memory: @BotPTR *+bot, idx=Bot;
+ 104  Phi  ===  103  54  90  133  171  220  309  374  [[ 1015 ]]  #abIO !jvms: Task::f @ bci:16 (line 6)
+ 103  Region  ===  103  61  97  140  178  215  316  369  [[ 103  104  105  106  229  383  1015 ]]  !jvms: Task::f @ bci:16 (line 6)
+ 116  Proj  ===  115  [[ 119 ]] #0 !jvms: Task::f @ bci:21 (line 6)
+ 8  Parm  ===  3  [[ 1015  1014  119  115  35  31  307  52  131  169  2073  88  2026 ]] FramePtr !jvms: Task::f @ bci:-1 (line 3)
+ 32  Proj  ===  31  [[ 35 ]] #0 !jvms: Task::f @ bci:1 (line 3)
+ 1014  Return  ===  13  14  16  8  9 returns 17  [[ 0 ]] 
+ 1015  Rethrow  ===  103  104  1012  8  9 exception 106  [[ 0 ]] 
+ 119  Halt  ===  116  1  1  8  1  [[ 0 ]]  !jvms: Task::f @ bci:21 (line 6)
+ 35  Halt  ===  32  1  1  8  1  [[ 0 ]]  !jvms: Task::f @ bci:1 (line 3)
+ 0  Root  ===  0  35  119  1015  1014  [[ 0  1  3  22  30  887  881  875  44  46  68  77  874  107  867  158  184  193  866  197  198  199  859  853  847  846  207  243  256  269  295  329  335  1843  347  384  447  839  838  567  832  581  583  826  589  592  825  596  818  602  812  607  811  743  799  787  793  1016  1068  1073  1075  1079  1085  1088  1089  1199  1250  1418  1422  1433  1506  1766  1812  1813  1827  1842  1989  1990  1992  2002  2005  2008  2011  2033  2034  2036  2082  2083 ]] 
+ok!
+
