@@ -6,7 +6,9 @@ For the `Flag Source` column I just record where I find the flag for this challe
 
 Name | Event | Category | Difficulty | Comment | Flag Source
 --- | --- | --- | --- | --- | --- |
-[how2gen](https://github.com/Septyem/My-Public-CTF-Challenges/tree/master/0ctf-tctf-2021-final/how2gen) | 0CTF/TCTF 2021 Finals | Misc | Easy | A tutorial of writing generators with certain grammar, which (hopefullly) can be useful in language fuzzing | / 
+[backend](https://github.com/Septyem/My-Public-CTF-Challenges/tree/master/0ctf-tctf-2022/backend) | 0CTF/TCTF 2022 | Reverse | Medium | Reversing custom LLVM backend and produce one `\x00` in `.text` section | / 
+[babysnitch](https://github.com/Septyem/My-Public-CTF-Challenges/tree/master/0ctf-tctf-2022/babysnitch) | 0CTF/TCTF 2022 | Pwn | Medium | Bypass the application firewall and send out the flag with RCE given | / 
+[how2gen](https://github.com/Septyem/My-Public-CTF-Challenges/tree/master/0ctf-tctf-2021-final/how2gen) | 0CTF/TCTF 2022 Finals | Misc | Easy | A tutorial of writing generators with certain grammar, which (hopefullly) can be useful in language fuzzing | / 
 [bali](https://github.com/Septyem/My-Public-CTF-Challenges/tree/master/0ctf-tctf-2021-final/bali) | 0CTF/TCTF 2021 Finals | Reverse | Medium Hard | Recovering java code with PrintIdeal IR logs | /
 [cloudpass](https://github.com/Septyem/My-Public-CTF-Challenges/tree/master/0ctf-tctf-2021/cloudpass) | 0CTF/TCTF 2021 Quals | Crypto | Medium Hard | The `pykeepass` module will not update seed/IV with `save`, which can be used to leak content when comparing file changes  | /
 [how2mutate](https://github.com/Septyem/My-Public-CTF-Challenges/tree/master/0ctf-tctf-2021/how2mutate) | 0CTF/TCTF 2021 Quals | Pwn | Medium Hard | Misuse of `util_Realloc` in Honggfuzz can lead to double free. Discovered this issue when writing honggfuzz plugins | / 
