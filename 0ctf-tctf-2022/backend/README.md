@@ -1,3 +1,11 @@
+## backend
+
+Try to produce a single '\x00' in `.text` section with this custom llvm backend
+
+### Solution
+
+Reverse the MatcherTable in `llc`, and avoid default optimizations by llvm.
+
 ### Attachment
 
 The binary `llc` is too large to upload. You can download full attachment here
